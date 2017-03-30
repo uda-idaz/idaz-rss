@@ -5,6 +5,9 @@ const del = require('del');
 // const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 
+const jsdoc2md = require('jsdoc-to-markdown');
+const fs = require('fs');
+
 const babel = require('gulp-babel');
 const Server = require('karma').Server;
 
@@ -79,6 +82,32 @@ gulp.task('test', ['build:src', 'build:test', 'build:app'], function(cb) {
         configFile: __dirname + '/karma.conf.js'
         ,singleRun: true
     }, cb).start();
+});
+
+
+var runJsdoc2md = function (fileSource, outputPath) {
+    var basename;
+    return gulp.src(fileSource)
+        .pipe($.tap(function (file, t) {
+            basename = file.relative.split('.js')[0];
+            //console.log("outpath " + outputPath + " File " + file.path + "  " + basename);
+            jsdoc2md.render({
+                files: file.path
+            }).then(output => fs.writeFile(outputPath + basename + '.md', output));
+        }));
+};
+
+gulp.task('doc:api', function () {
+
+
+    var fileSource = 'src/**/*.js';
+    var outputPath = './doc/src/';
+
+    runJsdoc2md(fileSource, outputPath);
+    //rup_table
+    fileSource = 'src/rup_table/rup*.js';
+    //outputPath = './doc/api/table/';
+    runJsdoc2md(fileSource, outputPath);
 });
 
 gulp.task('build', ['build:src', 'build:test', 'build:app','copy:app']);

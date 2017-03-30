@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/uda-idaz/idaz-rss.svg?branch=master)](https://travis-ci.org/uda-idaz/idaz-rss)
+
 # Componente RSS
 
 Implementación del componente RSS para el proyecto uda-idaz.
