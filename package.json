@@ -1,0 +1,54 @@
+{
+  "name": "idaz-rss",
+  "version": "0.1.0",
+  "description": "Rss component of uda-idaz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uda-idaz/idaz-rss.git"
+  },
+  "author": "EJIE",
+  "license": "EUPL-1.1",
+  "bugs": {
+    "url": "https://github.com/uda-idaz/idaz-rss/issues"
+  },
+  "homepage": "https://github.com/uda-idaz/idaz-rss#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-amd": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "jasmine": "^2.5.3",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-es6-shim": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "requirejs": "^2.3.3",
+    "run-sequence": "^1.2.2"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  }
+}
