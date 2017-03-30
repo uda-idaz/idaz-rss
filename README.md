@@ -2,6 +2,19 @@
 
 Implementación del componente RSS para el proyecto uda-idaz.
 
+## Instalación
+
+Ejecutar lo siguiente para la instalación:
+
+```bash
+# Clonamos el repositorio a nuestro directorio local
+$ git clone https://github.com/uda-idaz/idaz-rss.git
+
+# Instalamos las dependencias de npm
+$ npm install
+```
+
+
 ## Comandos
 
 

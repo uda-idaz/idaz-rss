@@ -1,7 +1,7 @@
 Licencia Pública de la Unión Europea
-             Versión 1.1
-    EUPL © Comunidad Europea 2007
- http://ec.europa.eu/idabc/eupl.html
+Versión 1.1
+EUPL © Comunidad Europea 2007
+http://ec.europa.eu/idabc/eupl.html
 
 
 La presente Licencia Pública de la Unión Europea («EUPL»), se aplica a la
@@ -13,7 +13,7 @@ derechos de autor de la obra).
 
 La obra original se suministrará en las condiciones fijadas en la presente
 licencia cuando el licenciante (definido a continuación) haya colocado la
-siguiente advertencia inmediatamente después de la mención a los derechos 
+siguiente advertencia inmediatamente después de la mención a los derechos
 de autor de la obra original:
 
 Licencia cedida con arreglo a la EUPL V.1.1
